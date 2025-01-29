@@ -51,7 +51,7 @@ export function Footer() {
             className="flex items-center gap-6"
           >
             <Link 
-              href="https://instagram.com/alvory.in" 
+              href="https://www.instagram.com/thisisaivory" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-black transition-all duration-300 hover:scale-110 hover:-rotate-12"
@@ -60,7 +60,7 @@ export function Footer() {
             </Link>
             
             <Link 
-              href="/careers" 
+              href="https://docs.google.com/document/d/1AG7K_vn7vbYtU_BRq6t6hBnwI8zu5AzRm4PZd9YkvdQ/edit?usp=sharing" 
               className="text-black relative font-sans text-sm group"
             >
               <span className="transition-all duration-300 group-hover:opacity-70">
