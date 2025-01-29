@@ -141,23 +141,22 @@ export default function Page() {
                 variants={itemVariants}
                 className="text-[3.25rem] sm:text-[3.5rem] md:text-[4rem] lg:text-[4.5rem] xl:text-[5.5rem] font-serif leading-[1.1] tracking-tight"
               >
-                Find Your Perfect Match ✨
+                One Search, All Stores ✨
               </motion.h1>
               
               <motion.p
                 variants={itemVariants}
                 className="text-2xl sm:text-2xl md:text-3xl font-serif italic"
               >
-                Text it like you mean it
+                Shop Faster Than Ever
               </motion.p>
               
               <motion.p
                 variants={itemVariants}
-                className="text-xl sm:text-xl md:text-2xl font-sans max-w-[28ch] mx-auto lg:mx-0"
+                className="text-xl sm:text-xl md:text-2xl font-sans max-w-[32ch] mx-auto lg:mx-0"
               >
-                Skip the endless scroll. Just tell us what your skin needs - we'll handle the rest.
+                Stop jumping between tabs. Find exactly what you want across all your favorite stores in one place.
               </motion.p>
-              
               <motion.div variants={itemVariants}>
                 <form onSubmit={handlePhoneSubmit} className="relative max-w-md mx-auto lg:mx-0">
                   <motion.div 

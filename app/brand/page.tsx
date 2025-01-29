@@ -79,48 +79,97 @@ export default function BrandPage() {
           animate="visible"
           className="flex-grow py-16 sm:py-20 lg:py-24"
         >
-          <div className="max-w-4xl mx-auto space-y-16 text-center">
-            <motion.h1 
-              variants={itemVariants}
-              className="text-4xl sm:text-5xl md:text-6xl font-serif"
-            >
-              Welcome to AIvory ✨
-            </motion.h1>
+          <div className="max-w-5xl mx-auto space-y-20 text-center">
+            {/* Hero Section */}
+            <div className="space-y-6">
+              <motion.h1 
+                variants={itemVariants}
+                className="text-4xl sm:text-5xl md:text-7xl font-serif"
+              >
+                Shopping Made Simple ✨
+              </motion.h1>
+              <motion.p 
+                variants={itemVariants}
+                className="text-xl sm:text-2xl md:text-3xl font-serif italic text-gray-700"
+              >
+                Find what you love, faster than ever.
+              </motion.p>
+            </div>
 
-            <motion.div 
-              variants={itemVariants}
-              className="space-y-8 text-xl sm:text-2xl"
-            >
-              <p className="font-serif italic">
-                Where AI meets beauty and your perfect match awaits.
-              </p>
-
-              <p className="font-sans tracking-tight text-gray-800">
-                We're reimagining skincare shopping in India. 
-                <br></br>
-                No more endless scrolling, no more trial and error. 
-                <br></br>
-                Just personalized recommendations that work for you.
-              </p>
-
-              <p className="font-sans tracking-tight text-gray-800">
-                Our AI understands your unique skin needs and matches you with products
-                that are perfect for you. We're building a future where finding the right
-                skincare is as easy as having a conversation.
-              </p>
-
-              <p className="font-serif italic">
-                Thank you for joining our waitlist. We'll notify you as soon as we launch!
-              </p>
+            {/* Problem Stats Section */}
+            <motion.div variants={itemVariants} className="space-y-12">
+              <h2 className="text-2xl sm:text-3xl font-serif">The Problem Today</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <motion.div 
+                  whileHover={{ scale: 1.05 }}
+                  className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-lg border border-black/5"
+                >
+                  <h3 className="text-5xl font-bold text-black mb-4">3hrs</h3>
+                  <p className="text-lg text-gray-600">Average time comparing products online</p>
+                </motion.div>
+                <motion.div 
+                  whileHover={{ scale: 1.05 }}
+                  className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-lg border border-black/5"
+                >
+                  <h3 className="text-5xl font-bold text-black mb-4">15+</h3>
+                  <p className="text-lg text-gray-600">Tabs open during shopping</p>
+                </motion.div>
+                <motion.div 
+                  whileHover={{ scale: 1.05 }}
+                  className="bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-lg border border-black/5"
+                >
+                  <h3 className="text-5xl font-bold text-black mb-4">70%</h3>
+                  <p className="text-lg text-gray-600">Shoppers overwhelmed & quit</p>
+                </motion.div>
+              </div>
             </motion.div>
 
-            <motion.div 
-              variants={itemVariants}
-              className="pt-8"
-            >
-              <p className="text-lg text-gray-600 font-sans tracking-tight">
-                You're currently #{Math.floor(Math.random() * 100) + 2400} on our waitlist
+            {/* Solution Section */}
+            <motion.div variants={itemVariants} className="space-y-12">
+              <div className="max-w-3xl mx-auto space-y-6">
+                <h2 className="text-2xl sm:text-3xl font-serif">Our Solution</h2>
+                <p className="text-xl sm:text-2xl font-sans tracking-tight text-gray-800 leading-relaxed">
+                  We're changing how you shop online.
+                  One search. All your favorite stores.
+                  Personalized results just for you.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <motion.div 
+                  whileHover={{ scale: 1.02 }}
+                  className="bg-black text-white p-10 rounded-3xl flex flex-col items-center text-center"
+                >
+                  <h3 className="text-3xl font-bold mb-4">2 Minutes</h3>
+                  <p className="text-xl">Average time to find the perfect product with our search</p>
+                </motion.div>
+                <motion.div 
+                  whileHover={{ scale: 1.02 }}
+                  className="bg-black text-white p-10 rounded-3xl flex flex-col items-center text-center"
+                >
+                  <h3 className="text-3xl font-bold mb-4">100+ Stores</h3>
+                  <p className="text-xl">Search across your favorite brands in one place</p>
+                </motion.div>
+              </div>
+            </motion.div>
+
+            {/* Closing Section */}
+            <motion.div variants={itemVariants} className="space-y-8 max-w-3xl mx-auto">
+              <p className="text-xl sm:text-2xl font-sans tracking-tight text-gray-800 leading-relaxed">
+                No more endless scrolling. No more comparing dozens of websites.
+                Just quick, personalized results that help you find and buy
+                exactly what you want.
               </p>
+
+              <p className="text-2xl sm:text-3xl font-serif italic text-gray-700">
+                The future of shopping is personal, and it's coming soon.
+              </p>
+
+              <div className="pt-8">
+                <p className="text-lg text-gray-600 font-sans tracking-tight bg-white/50 py-4 px-6 rounded-full inline-block">
+                  Join {Math.floor(Math.random() * 100) + 2400} others waiting to revolutionize their shopping experience
+                </p>
+              </div>
             </motion.div>
           </div>
         </motion.main>
