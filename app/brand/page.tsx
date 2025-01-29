@@ -177,4 +177,4 @@ export default function BrandPage() {
       <Footer />
     </div>
   )
-} 
+}
