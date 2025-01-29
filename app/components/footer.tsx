@@ -41,9 +41,9 @@ export function Footer() {
         >
           <Link 
             href="/" 
-            className="text-2xl font-bold flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:rotate-[2deg]"
+            className="text-2xl font-bold flex items-center transition-all duration-300 hover:scale-105 hover:rotate-[2deg]"
           >
-            AIV<span className="text-3xl">☀️</span>RY
+            AIV<span className="text-3xl animate-spin-slow">☀️</span>RY
           </Link>
           
           <motion.div 
